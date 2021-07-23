@@ -1,0 +1,26 @@
+[
+{
+  "model": "boards.board",
+  "pk": 1,
+  "fields": {
+    "manufacturer": "JP Australia",
+    "make": "Magic Ride",
+    "liters": 150,
+    "price": 1200,
+    "new": true,
+    "image": "https://jp-australia.com/wp-content/uploads/2020/10/JP_Australia-MagicRide_LXT-2021-Deck-1.png"
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 3,
+  "fields": {
+    "manufacturer": "Mistral",
+    "make": "mistal",
+    "liters": 120,
+    "price": 1750,
+    "new": true,
+    "image": "placeholder"
+  }
+}
+]
