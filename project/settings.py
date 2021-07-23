@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'boards'
 ]
 
 MIDDLEWARE = [
@@ -85,7 +86,7 @@ DATABASES = {  # added this to use postgres as the database instead of the defau
     # do this before running the initali migrations or you will need to do it again
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'users',
+        'NAME': 'sara',
         'HOST': 'localhost',
         'PORT': 5432,
         'USER':'postgres',
