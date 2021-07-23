@@ -12,6 +12,13 @@ class BoardListView(APIView):
         serialised_windsurfs=BoardSerializer(windsurf,many=True)
         return Response(serialised_windsurfs.data,status = status.HTTP_200_OK)
 
+    def post(self, request):
+        board_to_add = BoardSerializer(data=request.data)
+        if board_to_add.is_valid():
+            board_to_add.save()
+            return Response(board_to_add.data, status=status.HTTP_201_CREATED)
+        return Response(board_to_add.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
 class BoardOneView(APIView):
     def check_board_exists(self, pk):
         try:
