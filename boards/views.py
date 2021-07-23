@@ -34,6 +34,14 @@ class BoardOneView(APIView):
         serialized_board = BoardSerializer(windsuf_board)
         return Response(serialized_board.data, status=status.HTTP_200_OK)
 
+    def put(self, request, pk):
+        boards_to_alter = self.check_board_exists(pk=pk)
+        updated_board =BoardSerializer(boards_to_alter, data= request.data)
+        if updated_board.is_valid():
+            updated_board.save()
+            return Response(updated_board.data, status=status.HTTP_202_ACCEPTED)
+        return Response (updated_board.errors,status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
 wind=BoardOneView()
 
 class DeleteWindsurf(APIView):
