@@ -4,12 +4,13 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 
 from .models import Board
-from .serializers import BoardSerializer
+from .serializers.common import BoardSerializer
+from .serializers.populated import PopulatedWindsurfSerializer
 
 class BoardListView(APIView):
     def get(self,_request):
         windsurf = Board.objects.all()
-        serialised_windsurfs=BoardSerializer(windsurf,many=True)
+        serialised_windsurfs=PopulatedWindsurfSerializer(windsurf,many=True)
         return Response(serialised_windsurfs.data,status = status.HTTP_200_OK)
 
     def post(self, request):
@@ -31,7 +32,7 @@ class BoardOneView(APIView):
     def get(self, _request, pk):
         print("222222222")
         windsuf_board = self.check_board_exists(pk=pk)
-        serialized_board = BoardSerializer(windsuf_board)
+        serialized_board = PopulatedWindsurfSerializer(windsuf_board)
         return Response(serialized_board.data, status=status.HTTP_200_OK)
 
     def put(self, request, pk):
