@@ -33,3 +33,12 @@ class BoardOneView(APIView):
         windsuf_board = self.check_board_exists(pk=pk)
         serialized_board = BoardSerializer(windsuf_board)
         return Response(serialized_board.data, status=status.HTTP_200_OK)
+
+wind=BoardOneView()
+
+class DeleteWindsurf(APIView):
+    def delete(self, _request, pk):
+        # event = Windsurf.objects.get(pk=pk)
+        event=wind.check_board_exists(pk=pk)
+        event.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
