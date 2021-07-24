@@ -9,6 +9,10 @@ class Board(models.Model):
     price = models.PositiveIntegerField()
     new = models.BooleanField()
     image = models.CharField(max_length=500, default=None)
+    boardtype = models.ManyToManyField(
+        "boardtypes.BoardTypes",
+        related_name= "boards"
+    )
 
     def __str__ (self):
         return f"{self.manufacturer}-{self.make}"
