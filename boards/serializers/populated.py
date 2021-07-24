@@ -5,4 +5,3 @@ from boardtypes.serializers.common import BoardTypeSerializer
 class PopulatedWindsurfSerializer(BoardSerializer):
     comments = CommentSerializer(many=True)
     boardtype = BoardTypeSerializer(many=True)
-
