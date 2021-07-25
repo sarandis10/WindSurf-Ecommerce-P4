@@ -1,13 +1,13 @@
 import React from 'react'
 
-const App = () => {
+const Boards = () => {
 
 
   return (
     <div>
       <h1>i am Boards </h1>
     </div>
-)
+  )
 }
 
-export default App
+export default Boards

@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.switch{
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(39,38,38);
+  position: relative; //fater child pos
+}
+
+.flicker{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255,255,255);
+  position: absolute; //this requires pos relative to the parent
+  top:5px;
+  left:5px;
+  box-shadow: inset 4px 4px 4px rgb(255,255,255),
+  inset -6px -6px 4px rgb(115, 196, 228);
+}
+
+.dark{
+  background-color: rgb(115, 196, 228);
+}
