@@ -1,13 +1,19 @@
-
 /* eslint-disable no-unused-vars */
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-// import style from '../styles/style.module.css'
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Boards from '../src/components/Boards'
+
 
 const App = () => {
 
+
   return (
-    <h4>hello</h4>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/boards' component={Boards} />
+      </Switch>
+    </BrowserRouter>
+    
   )
 }
 
