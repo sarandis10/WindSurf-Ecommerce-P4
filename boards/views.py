@@ -2,12 +2,15 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Board
 from .serializers.common import BoardSerializer
 from .serializers.populated import PopulatedWindsurfSerializer
 
 class BoardListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly,)
+    
     def get(self,_request):
         windsurf = Board.objects.all()
         serialised_windsurfs=PopulatedWindsurfSerializer(windsurf,many=True)

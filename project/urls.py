@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('boards/', include('boards.urls')),
     path('comments/', include('comments.urls')),
-    path('boardtypes/', include('boardtypes.urls'))
+    path('boardtypes/', include('boardtypes.urls')),
+    path('auth/', include('jwt_auth.urls'))
 ]

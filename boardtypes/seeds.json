@@ -1,0 +1,44 @@
+[
+{
+  "model": "boardtypes.boardtypes",
+  "pk": 1,
+  "fields": {
+    "category": "Freeride"
+  }
+},
+{
+  "model": "boardtypes.boardtypes",
+  "pk": 2,
+  "fields": {
+    "category": "Wave"
+  }
+},
+{
+  "model": "boardtypes.boardtypes",
+  "pk": 3,
+  "fields": {
+    "category": "Freestyle"
+  }
+},
+{
+  "model": "boardtypes.boardtypes",
+  "pk": 4,
+  "fields": {
+    "category": "Speed"
+  }
+},
+{
+  "model": "boardtypes.boardtypes",
+  "pk": 5,
+  "fields": {
+    "category": "Slalom"
+  }
+},
+{
+  "model": "boardtypes.boardtypes",
+  "pk": 6,
+  "fields": {
+    "category": "Foil"
+  }
+}
+]

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'boards',
     'rest_framework',
     'comments',
-    'boardtypes'
+    'boardtypes',
+    'jwt_auth'
 ]
 
 MIDDLEWARE = [
@@ -89,7 +90,7 @@ DATABASES = {  # added this to use postgres as the database instead of the defau
     # do this before running the initali migrations or you will need to do it again
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wind',
+        'NAME': 'wind2',
         'HOST': 'localhost',
         'PORT': 5432,
         'USER':'postgres',
@@ -140,3 +141,17 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+AUTH_USER_MODEL =  'jwt_auth.User' #django to thse the custom user
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'jwt_auth.authentication.JWTAuthentication'
+    ],
+}

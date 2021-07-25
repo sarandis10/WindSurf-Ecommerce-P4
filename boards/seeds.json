@@ -8,7 +8,11 @@
     "liters": 150,
     "price": 1200,
     "new": true,
-    "image": "https://jp-australia.com/wp-content/uploads/2020/10/JP_Australia-MagicRide_LXT-2021-Deck-1.png"
+    "image": "https://jp-australia.com/wp-content/uploads/2020/10/JP_Australia-MagicRide_LXT-2021-Deck-1.png",
+    "boardtype": [
+      1,
+      5
+    ]
   }
 },
 {
@@ -20,7 +24,55 @@
     "liters": 120,
     "price": 1750,
     "new": true,
-    "image": "placeholder"
+    "image": "placeholder",
+    "boardtype": [
+      1
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 5,
+  "fields": {
+    "manufacturer": "Starboard",
+    "make": "GO",
+    "liters": 200,
+    "price": 1750,
+    "new": true,
+    "image": "placeholder",
+    "boardtype": [
+      1
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 6,
+  "fields": {
+    "manufacturer": "JP Australia",
+    "make": "Super Ride",
+    "liters": 134,
+    "price": 1850,
+    "new": true,
+    "image": "https://jp-australia.com/wp-content/uploads/2020/10/JP_Australia-SuperRide_GOLD-2021-Deck.png",
+    "boardtype": [
+      1
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 7,
+  "fields": {
+    "manufacturer": "Fanatic",
+    "make": "Gecko",
+    "liters": 200,
+    "price": 1750,
+    "new": true,
+    "image": "placeholder",
+    "boardtype": [
+      1
+    ]
   }
 }
 ]

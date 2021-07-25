@@ -1,0 +1,11 @@
+[
+{
+  "model": "comments.comment",
+  "pk": 2,
+  "fields": {
+    "text": "good mistal old school stuff",
+    "created_at": "2021-07-23T14:57:36.325Z",
+    "board": 3
+  }
+}
+]
