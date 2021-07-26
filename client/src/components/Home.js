@@ -1,30 +1,37 @@
 /* eslint-disable quotes */
 import React from 'react'
+import HomeMain from './HomeMain'
+import Flicker from './Flicker'
+
 
 const App = () => {
 
 
   return (
     <>
+      
       <header>
         <div className="switch">
           <div className="flicker"></div>
+          <div className="moon"></div>
         </div>
         <div>
           <>
-            {(() => {
-              // eslint-disable-next-line no-unused-vars
-              const switchElement = document.querySelector('.switch')
-
-              switchElement.addEventListener('click', ()=> {
-                document.body.classList.toggle('dark')
-              })
-            })()}
+            {
+              // <Flicker></Flicker>
+            }
           </>
         </div> 
       </header>
+      <div className="hero-image">
+        <div className="cube" id="jp"></div>
+        <div className="cube" id="fanatic"></div>
+        <div className="cube" id="starboard"></div>
+        <div className="cube" id="mistral"></div>
+      </div>
       <div>
         <h1>I am home </h1>
+        <HomeMain></HomeMain>
       </div>
     </>
   )
