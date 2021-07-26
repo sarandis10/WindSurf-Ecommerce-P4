@@ -1,6 +1,7 @@
 /* eslint-disable quotes */
 import React from 'react'
 import HomeMain from './HomeMain'
+// eslint-disable-next-line
 import Flicker from './Flicker'
 
 
@@ -18,7 +19,7 @@ const App = () => {
         <div>
           <>
             {
-              // <Flicker></Flicker>
+              <Flicker></Flicker>
             }
           </>
         </div> 
