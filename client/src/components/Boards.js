@@ -20,6 +20,7 @@ const Boards = () => {
 
   return (
     <>
+    
       <div className="card" styles="width: 18rem;">
         {boards.map(iter=> {
           return (

@@ -19,7 +19,7 @@ const App = () => {
         <div>
           <>
             {
-              <Flicker></Flicker>
+              // <Flicker></Flicker>
             }
           </>
         </div> 
