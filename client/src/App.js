@@ -8,7 +8,7 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Register from './components/Register'
 import BoardShow from './components/BoardShow'
-import Checkout from './components/Checkout'
+
 
 const App = () => {
 
@@ -17,15 +17,11 @@ const App = () => {
     <BrowserRouter>
       <Nav />
       <Switch>
-        
         <Route exact path='/' component={Home} />
-        <Route exact path='/checkout' component={Checkout} />
         <Route exact path='/boards' component={Boards} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/boards/:id' component={BoardShow} />
-        
-
       </Switch>
       <Footer />
     </BrowserRouter>

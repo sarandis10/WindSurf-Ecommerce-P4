@@ -4,8 +4,10 @@ import React,{ useEffect , useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Basket from './Basket'
 
 const BoardShow = () => {
+  const [cartItems,setCartItems] = useState([])
   const [board, setBoard] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
@@ -22,6 +24,19 @@ const BoardShow = () => {
     getData()
   }, []) //id
 
+
+
+  const onAdd = (board)=>{
+    const exist = cartItems.find(x=> x.id === board.id)
+
+    if (exist){
+      setCartItems(cartItems.map(x=> 
+        x.id === board.id ? {...exist, qty: exist.qty + 1 } : x))
+    } else {
+      setCartItems([...cartItems,{...board, qty: 1}])
+    }
+  }
+
   console.log('this is the board', board)
   return (
     <>
@@ -32,12 +47,13 @@ const BoardShow = () => {
           <p className="card-text">{board.pice}</p>
         </div>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">{board.liters}</li>
-          <li className="list-group-item">{board.make}</li>
-          <li className="list-group-item">{board.price}</li>
-          <Link to="/checkout">
-            <a href="#" className="btn btn-primary">Buy me</a>
-          </Link>
+          <li className="list-group-item">Liters: {board.liters}</li>
+          <li className="list-group-item">Model: {board.make}</li>
+          <li className="list-group-item">Price: £{board.price}</li>
+        
+          <a href="#" onClick={onAdd} className="btn btn-primary">Add to Cart</a>
+          <br></br>
+          <Basket onAdd={onAdd} cartItems={cartItems} price={board.price} man = {board.manufacturer}></Basket>
         </ul>
       </div>
     </>
