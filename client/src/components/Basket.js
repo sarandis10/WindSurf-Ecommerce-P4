@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 // eslint-disable-next-line no-unused-vars
 const Basket = (props) => {
@@ -8,6 +9,12 @@ const Basket = (props) => {
   // const man = props.man
   const totalPrice = cartItems.reduce((acc,c)=> acc + c.price * c.qty,0)
   console.log(cartItems)
+
+  const history = useHistory()
+
+  const moreShopping = () => {
+    history.push('')
+  }
 
   return (
     <>
@@ -23,7 +30,7 @@ const Basket = (props) => {
           <div>
             <button onClick={()=>onAdd(item)} className="add">+
             </button>
-            <button onClick={()=>onRemove (item)} className="remove">-
+            <button onClick={()=>onRemove(item)} className="remove">-
             </button>
           </div>
           <div>
@@ -33,7 +40,10 @@ const Basket = (props) => {
             Total: {totalPrice}
           </div>
           <div >
-            <button className="btn btn-primary">Pay</button>
+            <button className="btn btn-primary">Pay :)</button>
+          </div>
+          <div >
+            <button onClick={()=>moreShopping()} className="btn btn-primary">Keep shoping</button>
           </div>
         </div>
       ))}
