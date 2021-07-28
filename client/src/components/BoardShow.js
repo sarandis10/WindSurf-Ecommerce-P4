@@ -37,6 +37,16 @@ const BoardShow = () => {
     }
   }
 
+  const onRemove = (board) =>{
+    const exist = cartItems.find((x)=> x.id === board.id)
+    if (exist.qty === 1){
+      setCartItems(cartItems.filter((x)=>x.id !== board.id))
+    } else {
+      setCartItems(cartItems.map(x=> 
+        x.id === board.id ? {...exist, qty: exist.qty - 1 } : x))
+    }
+  }
+
   console.log('this is the board', board)
   return (
     <>
@@ -51,9 +61,9 @@ const BoardShow = () => {
           <li className="list-group-item">Model: {board.make}</li>
           <li className="list-group-item">Price: £{board.price}</li>
         
-          <a href="#" onClick={onAdd} className="btn btn-primary">Add to Cart</a>
+          <a href="#" onClick={()=> onAdd(board)} className="btn btn-primary">Add to Cart</a>
           <br></br>
-          <Basket onAdd={onAdd} cartItems={cartItems} price={board.price} man = {board.manufacturer}></Basket>
+          <Basket onAdd={onAdd} cartItems={cartItems} price={board.price} man = {board.manufacturer} onRemove={onRemove}></Basket>
         </ul>
       </div>
     </>
