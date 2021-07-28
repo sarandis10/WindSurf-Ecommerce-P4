@@ -17,7 +17,7 @@ const Boards = () => {
       console.log(boards)
     }
     getData()
-  },[])
+  },[])  //boards
 
 
   const [filteredBoards, setFilteredBoards] = useState([])
@@ -100,7 +100,7 @@ const Boards = () => {
               <div key ={index} className="card-body">
                 <h5 className="card-title">Make: {iter.manufacturer}</h5>
                 <p className="card-text">Model: {iter.make}</p>
-                <Link >
+                <Link to={`/boards/${iter.id}`}> 
                   <a href="#" className="btn btn-primary">Find More</a>
                 </Link>
               </div>
