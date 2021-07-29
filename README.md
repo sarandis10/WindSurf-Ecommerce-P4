@@ -33,5 +33,25 @@ Now you can Navigate on the site.
 
 3.3 Two filters have created and chained together
 
-![image](https://user-images.githubusercontent.com/43549151/127450977-b58a5aaa-32d9-4238-8651-74d4f1b81197.png) ![image](https://user-images.githubusercontent.com/43549151/127451060-d7a2bb50-5e08-4b89-9e39-5070acf6beb0.png)
+![image](https://user-images.githubusercontent.com/43549151/127450977-b58a5aaa-32d9-4238-8651-74d4f1b81197.png)
+
+3.4 The code for the filters 
+
+![image](https://user-images.githubusercontent.com/43549151/127451060-d7a2bb50-5e08-4b89-9e39-5070acf6beb0.png)
+
+3.5 There is a cart implementation
+
+![image](https://user-images.githubusercontent.com/43549151/127451943-b70d5f22-07a3-4e18-81fb-1d615d036861.png)
+
+3.6 And a paypal one
+
+![image](https://user-images.githubusercontent.com/43549151/127453281-b622a295-c9ac-4572-b498-6a9b92345c90.png)
+
+![image](https://user-images.githubusercontent.com/43549151/127453418-773ec913-2551-4191-a3f4-f1d89e8cb5d8.png)
+
+3.7 i have setted up a Sanbox Paypal i have passed the price as props from the boards component to the paypal and works just fine!
+
+![image](https://user-images.githubusercontent.com/43549151/127454138-c45c8909-d5f5-49ea-a8dd-6b47cdd7ec24.png)
+
+
 
