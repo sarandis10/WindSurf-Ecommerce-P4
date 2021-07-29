@@ -40,25 +40,22 @@ const Footer = () => {
                 Company
                 </h6>
                 <p>
-                  <a href="/AboutUs" className="text-reset fw-bold">ABOUT US</a>
+                  <a href="#" className="text-reset fw-bold">ABOUT US</a>
                 </p>
               </div>
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4 boldtext">
                 Contact</h6>
-                <p className="text-reset fw-bold" id="cursor">info@cestdesk.com</p>
-                <p className="text-reset fw-bold taras4" >New York, NY 10012, US</p>
-                <p className="text-reset fw-bold">0044 1774 5678 878</p>
-                <p className="text-reset fw-bold">0044 7574 5678 878</p>
+                <p className="text-reset fw-bold" id="cursor">info@windsurf.com</p>
+                <p className="text-reset fw-bold taras4" >Athens,  10012, GR</p>
+                <p className="text-reset fw-bold">0030 123456 5854</p>
+                <p className="text-reset fw-bold">0030 587747 5854</p>
               </div>
 
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4 boldtext">
                 Impact
                 </h6>
-                <p>
-                  <Link to="/indexandmap" className="text-reset fw-bold">Map</Link>
-                </p>
               </div>
             </div>
           </div>

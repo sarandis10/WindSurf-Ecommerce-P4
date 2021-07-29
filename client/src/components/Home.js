@@ -31,7 +31,6 @@ const App = () => {
         <div className="cube" id="mistral"></div>
       </div>
       <div>
-        <h1>I am home </h1>
         <HomeMain></HomeMain>
       </div>
     </>
