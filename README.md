@@ -17,7 +17,7 @@ Now you can Navigate on the site.
 
 
 
-2.2 The comments and the boards types are relationsips one to many and many to many respectively. 
+2.2 The comments and the boards types are relationships one to many and many to many respectively. 
 2.3 GET, POST, DELETE, PUT methods have been implemented for both the boards and the comments 
 2.4 Basic authentication has been created by encoding and decoding a token. 
 
@@ -53,5 +53,11 @@ Now you can Navigate on the site.
 
 ![image](https://user-images.githubusercontent.com/43549151/127454138-c45c8909-d5f5-49ea-a8dd-6b47cdd7ec24.png)
 
+# 4.0 Challenges- Wins
+4.1 working by yourself through the whole project you realize that you cant achieve as many you could with the team. Thus, you have to be realistic in what you want to achieve in certain time. 
+4.2 You come across errors or having setup issues that before have been fixed by someone else but now you have to deal with everything 
+4.3 Makes you feel stronger technically as literally YOU are dealing with all the problems and not maybe a member of you team.
+4.4 More room to improvise!
+4.5 If the outcome is good you feel a great satisfaction! 
 
 
