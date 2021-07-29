@@ -12,8 +12,26 @@ Now you can Navigate on the site.
 
 # 2.0 - BackEnd
 2.1 the site consists of four apps
+
 ![image](https://user-images.githubusercontent.com/43549151/127447333-d7a3c86f-17c5-4353-9f8a-b3b5be2d9283.png)
 
 
 
-2.2 the comments and the boards types are relationsips one to many and many to many respectively. 
+2.2 The comments and the boards types are relationsips one to many and many to many respectively. 
+2.3 GET, POST, DELETE, PUT methods have been implemented for both the boards and the comments 
+2.4 Basic authentication has been created by encoding and decoding a token. 
+
+![image](https://user-images.githubusercontent.com/43549151/127448639-23614529-4d6c-4aae-97e0-45cf3a810347.png)
+
+
+#3.0- Front End
+
+3.1 React and bootstrap technologies used for the front end
+3.2 However the dongle and the boxes shown on the top of the page are pure css
+
+![image](https://user-images.githubusercontent.com/43549151/127450713-31b04f87-041c-4e75-863c-48ab0a503dc2.png)
+
+3.3 Two filters have created and chained together
+
+![image](https://user-images.githubusercontent.com/43549151/127450977-b58a5aaa-32d9-4238-8651-74d4f1b81197.png) ![image](https://user-images.githubusercontent.com/43549151/127451060-d7a2bb50-5e08-4b89-9e39-5070acf6beb0.png)
+
