@@ -54,7 +54,7 @@ Now you can Navigate on the site.
 ![image](https://user-images.githubusercontent.com/43549151/127454138-c45c8909-d5f5-49ea-a8dd-6b47cdd7ec24.png)
 
 # 4.0 Challenges- Wins
-4.1 working by yourself through the whole project you realize that you cant achieve as many you could with the team. Thus, you have to be realistic in what you want to achieve in certain time.
+4.1 Working by yourself through the whole project you realize that you cant achieve as many you could with the team. Thus, you have to be realistic in what you want to achieve in certain time.
 
 4.2 You come across errors or having setup issues that before have been fixed by someone else but now you have to deal with everything 
 
@@ -63,5 +63,9 @@ Now you can Navigate on the site.
 4.4 More room to improvise!
 
 4.5 If the outcome is good you feel a great satisfaction! 
+
+4.6 Learn how to manage your own time
+
+4.7 Make your own plan and meet the deadlines
 
 
