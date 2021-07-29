@@ -1,6 +1,8 @@
 
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import Paypal from './Paypal'
+import { useState } from 'react'
 
 // eslint-disable-next-line no-unused-vars
 const Basket = (props) => {
@@ -16,6 +18,10 @@ const Basket = (props) => {
     history.push('')
   }
 
+  // eslint-disable-next-line no-undef
+  const [checkout,setCheckout] = useState(false)
+  console.log(checkout)
+  console.log('price in the basket',price)
   return (
     <>
       <div>
@@ -40,7 +46,11 @@ const Basket = (props) => {
             Total: {totalPrice}
           </div>
           <div >
-            <button className="btn btn-primary">Pay :)</button>
+            { checkout ? (
+              <Paypal cost={price}/>
+            ) : (
+              <button onClick= {() => setCheckout(true)} className="btn btn-primary">Checkout</button>)
+            }
           </div>
           <div >
             <button onClick={()=>moreShopping()} className="btn btn-primary">Keep shoping</button>
