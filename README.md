@@ -24,7 +24,7 @@ Now you can Navigate on the site.
 ![image](https://user-images.githubusercontent.com/43549151/127448639-23614529-4d6c-4aae-97e0-45cf3a810347.png)
 
 
-#3.0- Front End
+# 3.0- Front End
 
 3.1 React and bootstrap technologies used for the front end
 3.2 However the dongle and the boxes shown on the top of the page are pure css
@@ -54,10 +54,14 @@ Now you can Navigate on the site.
 ![image](https://user-images.githubusercontent.com/43549151/127454138-c45c8909-d5f5-49ea-a8dd-6b47cdd7ec24.png)
 
 # 4.0 Challenges- Wins
-4.1 working by yourself through the whole project you realize that you cant achieve as many you could with the team. Thus, you have to be realistic in what you want to achieve in certain time. 
+4.1 working by yourself through the whole project you realize that you cant achieve as many you could with the team. Thus, you have to be realistic in what you want to achieve in certain time.
+
 4.2 You come across errors or having setup issues that before have been fixed by someone else but now you have to deal with everything 
+
 4.3 Makes you feel stronger technically as literally YOU are dealing with all the problems and not maybe a member of you team.
+
 4.4 More room to improvise!
+
 4.5 If the outcome is good you feel a great satisfaction! 
 
 
