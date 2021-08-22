@@ -17,8 +17,8 @@ Now you can Navigate on the site.
 # Technologies used
 
 *Python
-    Django
-    PostgreSQL
+*Django
+*PostgreSQL
     React
     React Hooks
     Insomnia
