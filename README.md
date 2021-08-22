@@ -19,16 +19,15 @@ Now you can Navigate on the site.
 *  Python
 *  Django
 *  PostgreSQL
-    React
-    React Hooks
-    Insomnia
-    Axios
-    Sass
-    Bulma
-    Git
-    GitHub
-    Figma
-    Trello
+*  React
+*  React Hooks
+*  Insomnia
+*  Axios
+*  Sass
+*  Bootstrap
+*  Git
+*  GitHub
+*  Trello
 
 
 
