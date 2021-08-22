@@ -14,6 +14,24 @@ This a Fully Functional web site where you can upload your used or new windsurf 
       
 Now you can Navigate on the site.
 
+# Technologies used
+
+*Python
+    Django
+    PostgreSQL
+    React
+    React Hooks
+    Insomnia
+    Axios
+    Sass
+    Bulma
+    Git
+    GitHub
+    Figma
+    Trello
+
+
+
 # 2.0 - BackEnd
 2.1 the site consists of four apps
 
