@@ -1,6 +1,6 @@
 # Windsurfing E-Commerce using python and PostgreSQL
 
-This a web site where you can upload your used or new windsurf and sell it 
+This a Fully Functional web site where you can upload your used or new windsurf and sell it. i have implemented a cart and a paypal payment system which works flawlessly
 
 # 1.0 To Run the app
 
