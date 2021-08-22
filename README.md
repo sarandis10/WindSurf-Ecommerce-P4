@@ -5,7 +5,9 @@ This a web site where you can upload your used or new windsurf and sell it
 # 1.0 To Run the app
 
 1.1 Go on the backend folder and run the commands:
+
 1.1.1  pipenv shell – takes you to the python shell
+
 1.1.2  python manage.py runserver -  to run the server
 
 1.2 On the client forder run yarn && yarn start
